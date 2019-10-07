@@ -1,0 +1,26 @@
+{
+  "name": "workspaceppi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angie-restrepo23161/CESW2Equipo2.git"
+  },
+  "author": "Angie Evlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angie-restrepo23161/CESW2Equipo2/issues"
+  },
+  "homepage": "https://github.com/angie-restrepo23161/CESW2Equipo2#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.3"
+  }
+}
