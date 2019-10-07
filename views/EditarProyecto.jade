@@ -1,0 +1,41 @@
+extends ./layoutSesion.jade
+block contenido
+    form(action="/proyectId", methodo = "POST")
+        br
+        center
+            div(class="page-content p-4")
+                div(class="form-group")
+                    h1 Proyecto #1
+                    label(for="id") Id
+                    input(type="text", name="id", placeholder="Id" id="id", class="form-control", readonly="readonly", value="#{proyecto._id}")
+                    label(for="id") Codigo Proyecto
+                    input(type="text", name="codigoProyecto", placeholder="Codigo Proyecto" id="codigoProyecto", class="form-control", value="#{proyecto.codigoProyecto}")
+                    label(for="cliente") Cliente
+                    input(type="text", name="idCliente", placeholder="Cliente" id="idCliente", class="form-control", value="#{proyecto.idCliente}")
+                    label(for="lider") Líder
+                    input(type="text", name="idLider", placeholder="Líder" id="idLider", class="form-control", value="#{proyecto.idLider}")
+                    label(for="responsable") Responsable
+                    input(type="text", name="idResponsable", placeholder="Responsable" id="idResponsable", class="form-control", value="#{proyecto.idResponsable}")
+                    label(for="soporte") Soporte
+                    input(type="text", name="idSoport", placeholder="Soporte" id="idSoport", class="form-control", value="#{proyecto.idSoport}")
+                    label(for="nombre") Nombre
+                    input(type="text", name="nombre", placeholder="Nombre" id="nombre", class="form-control", value="#{proyecto.nombre}")
+                    label(for="clasificacion") Clasificación
+                    input(type="text", name="clasificacion", placeholder="Clasificación" id="clasificacion", class="form-control", value="#{proyecto.clasificacion}")
+                    label(for="fechaIngreso") Fecha Ingreso
+                    input(type="text", name="fechaIngreso", placeholder="Fecha Ingreso" id="fechaIngreso", class="form-control", value="#{proyecto.fechaIngreso}")
+                    label(for="fechaIngreso") Descripción
+                    input(type="text", name="Descripcion", placeholder="Descripcion" id="Descripcion", class="form-control", value="#{proyecto.Descripcion}")
+                    br
+                    table
+                        tr  
+                            td 
+                                input(type="submit", value="Actualizar", class="btn btn-info")
+                            td
+                                a(href="./nuevoProyecto", class="btn btn-info") Nuevo
+                            td
+                                a(href="./Eliminar/"+"#{proyecto._id}" class="btn btn-danger") Eliminar
+                            td 
+                                a(href="./proyectos", class="btn btn-info") Volver
+
+ 

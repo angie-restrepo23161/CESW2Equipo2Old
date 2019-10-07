@@ -1,0 +1,37 @@
+extends ./layoutSesion.jade
+block contenido
+        form(action="/proyectos", method ="POST")
+            center
+                h1 Proyectos
+            div(class="page-content p-4")
+                a(href="./nuevoProyecto" class="btn btn-info") Nuevo
+                
+                table(border="1", class="table table-dark table-hover")
+                    thead
+                        tr  
+                            th id
+                            th Cod
+                            th Cliente
+                            th Líder
+                            th Responsable
+                            th Soport
+                            th Nombre
+                            th Clasificación
+                            th Fecha
+                            th Descripción
+                    tbody
+                        -each item in proyecto
+                          tr
+                            td #{item._id}
+                            td #{item.codigoProyecto}
+                            td #{item.idCliente}
+                            td #{item.idLider}
+                            td #{item.idResponsable}
+                            td #{item.idSoport}
+                            td #{item.nombre}
+                            td #{item.clasificacion}
+                            td #{item.fechaIngreso}
+                            td #{item.Descripcion}
+                            td 
+                                a(href='./'+"#{item._id}", class="btn btn-info") Editar
+                

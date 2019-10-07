@@ -1,0 +1,18 @@
+extends ./layout.jade
+block contenido
+    form(action="/users", method ="POST")
+    br
+    center
+        div(class="page-content p-4")
+            div(class="form-group")
+                label(for="email") Email
+                input(type="text", name="email", placeholder="Email" id="email", class="form-control")
+            
+                label(for="contrasena") Contraseña
+                input(type="password", name="contrasena", placeholder="Contraseña" id="contrasena",class="form-control")
+            
+                //br
+                //input(type="submit", value="Iniciar" class="btn btn-info")
+                
+                br
+                a(href="../proyectos", class="btn btn-info") Ir

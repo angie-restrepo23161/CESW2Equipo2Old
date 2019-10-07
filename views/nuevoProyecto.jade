@@ -1,0 +1,27 @@
+extends ./layoutSesion.jade
+block contenido
+    form(action="/proyectById", method = "POST")
+        
+        center
+            div(class="page-content p-4")
+                div(class="form-group")
+                    label(for="id") Codigo Proyecto
+                    input(type="text", name="codigoProyecto", placeholder="Codigo Temp" id="codigoProyecto", class="form-control")
+                    label(for="cliente") Cliente
+                    input(type="text", name="idCliente", placeholder="Cliente" id="idCliente", class="form-control")
+                    label(for="lider") Líder
+                    input(type="text", name="idLider", placeholder="Líder" id="idLider", class="form-control")
+                    label(for="responsable") Responsable
+                    input(type="text", name="idResponsable", placeholder="Responsable" id="idResponsable", class="form-control")
+                    label(for="soporte") Soporte
+                    input(type="text", name="idSoport", placeholder="Soporte" id="idSoport", class="form-control")
+                    label(for="nombre") Nombre
+                    input(type="text", name="nombre", placeholder="Nombre" id="nombre", class="form-control")
+                    label(for="clasificacion") Clasificación
+                    input(type="text", name="clasificacion", placeholder="Clasificación" id="clasificacion", class="form-control")
+                    label(for="fechaIngreso") Fecha Ingreso
+                    input(type="text", name="fechaIngreso", placeholder="Fecha Ingreso" id="fechaIngreso", class="form-control")
+                    label(for="fechaIngreso") Descripción
+                    input(type="text", name="Descripcion", placeholder="Descripcion" id="Descripcion", class="form-control")
+
+                    input(type="submit", value="Guardar" class="btn btn-info")
